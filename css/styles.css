@@ -162,6 +162,7 @@ button {
 
 .hero {
     background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hw-4-1.jpg');
 }
 
 .hero-title {
@@ -227,6 +228,14 @@ button {
 
 .feature-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.icondiv {
+
+}
+
+.features-icon {
+    
 }
 
 .feature-title {
@@ -322,6 +331,10 @@ button {
     color: #6c757d;
     text-align: center;
 }
+
+.team-icon {
+}
+
 
 .team-member:last-child {
     margin-right: 0;
