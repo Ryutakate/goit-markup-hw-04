@@ -136,7 +136,6 @@ button {
 }
 
 .header-navigation-link:hover::after {
-    color: #404bbf;
     width: 100%;
 }
 
