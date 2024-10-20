@@ -56,6 +56,9 @@ button {
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -96,6 +99,7 @@ button {
 }
 
 .header-navigation-link {
+    position: relative;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -106,6 +110,7 @@ button {
 
 .header-navigation-link:hover {
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navigation-link:focus {
@@ -115,6 +120,23 @@ button {
 .header-navigation-link:active {
     color: #404bbf;
     text-decoration: underline;
+}
+
+.header-navigation-link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0;
+}
+
+.header-navigation-link:hover::after {
+    width: 100%;
 }
 
 .contact-info {
@@ -149,6 +171,7 @@ button {
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:active {
