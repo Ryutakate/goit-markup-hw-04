@@ -325,11 +325,17 @@ button {
 
 .team-member {
     background-color: #ffffff;
+    border-radius: 4px;
     margin-right: 24px 0;
     flex-basis: calc((100% - 72px) / 4);
     text-align: center;
     list-style: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
 
+.team-member:hover {
+    transform: translateY(-5px);
 }
 
 .team-member:first-child {
@@ -342,7 +348,7 @@ button {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
 }
 
 .team-info {
@@ -370,21 +376,34 @@ button {
 
 .team-icons {
     display: flex;
+    justify-content: center;
     gap: 8px;
 }
 
 .team-icon {
     fill: #ffffff;
     transition: fill 0.3s;
+    width: 16px;
+    height: 16px;
 }
 
 .team-icon:hover {
     fill: #007bff;
 }
 
-
 .team-member:last-child {
     margin-right: 0;
+}
+
+.social-link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
 }
 
 /* 4 section */
