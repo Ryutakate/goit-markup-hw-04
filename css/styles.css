@@ -332,7 +332,18 @@ button {
     text-align: center;
 }
 
+.team-icons {
+    display: flex;
+    gap: 8px;
+}
+
 .team-icon {
+    fill: #ffffff;
+    transition: fill 0.3s;
+}
+
+.team-icon:hover {
+    fill: #007bff;
 }
 
 
