@@ -533,8 +533,6 @@ button {
 }
 
 .logo-and-paragraph {
-    display: flex;
-    align-items: baseline;
     margin-right: 120px;
 }
 
