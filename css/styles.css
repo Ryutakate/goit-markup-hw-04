@@ -532,6 +532,11 @@ button {
     padding-bottom: 100px;
 }
 
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
 .logo-and-paragraph {
     margin-right: 120px;
 }
@@ -555,6 +560,7 @@ button {
 .footer-description {
     font-weight: 400;
     font-size: 16px;
+    max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
@@ -564,7 +570,6 @@ button {
 .social-container {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
 }
 
 .social_media {
